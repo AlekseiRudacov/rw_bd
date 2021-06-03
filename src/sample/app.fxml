@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="700.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.trip_info">
+    <children>
+        <AnchorPane layoutY="80.0" prefHeight="571.0" prefWidth="700.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <Label layoutX="66.0" layoutY="33.0" text="Дата и время явки.">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="66.0" layoutY="94.0" text="Начало приемки.">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="66.0" layoutY="65.0" text="Направление.">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="66.0" layoutY="123.0" text="Номер поезда.">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="66.0" layoutY="150.0" text="Вес и оси.">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField id="data_new_trip" fx:id="start_data_trip" layoutX="377.0" layoutY="34.0" prefHeight="25.0" prefWidth="82.0" promptText="Дата" />
+                <TextField id="start" fx:id="where_from" layoutX="377.0" layoutY="66.0" prefHeight="25.0" prefWidth="82.0" promptText="Откуда" />
+                <TextField fx:id="start_data_work" layoutX="377.0" layoutY="95.0" prefHeight="25.0" prefWidth="82.0" promptText="Дата" />
+                <TextField id="train_namber" fx:id="train_namber" layoutX="377.0" layoutY="124.0" prefHeight="25.0" prefWidth="82.0" />
+                <TextField id="weight" fx:id="weight" layoutX="377.0" layoutY="151.0" prefHeight="25.0" prefWidth="82.0" promptText="Вес" />
+                <TextField id="axles" fx:id="train_long" layoutX="488.0" layoutY="151.0" prefHeight="25.0" prefWidth="82.0" promptText="Оси" />
+                <TextField fx:id="start_time_work" layoutX="488.0" layoutY="95.0" prefHeight="25.0" prefWidth="82.0" promptText="Время" />
+                <TextField id="finish" fx:id="where_" layoutX="488.0" layoutY="66.0" prefHeight="25.0" prefWidth="82.0" promptText="Куда" />
+                <TextField id="time_new_trip" fx:id="start_time_trip" layoutX="488.0" layoutY="34.0" prefHeight="25.0" prefWidth="82.0" promptText="Время" />
+                <TextField id="part_A" fx:id="start_section_A" layoutX="488.0" layoutY="188.0" />
+                <TextField id="part_B" fx:id="start_section_B" layoutX="488.0" layoutY="222.0" />
+                <Label layoutX="378.0" layoutY="187.0" text="Секция А.">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="379.0" layoutY="221.0" text="Секция В.">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField id="part_A" fx:id="end_section_A" layoutX="489.0" layoutY="272.0" />
+                <TextField id="part_B" fx:id="end_section_B" layoutX="489.0" layoutY="306.0" />
+                <Label layoutX="379.0" layoutY="271.0" text="Секция А.">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="380.0" layoutY="305.0" text="Секция В.">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="66.0" layoutY="355.0" text="Сдача локомотива.">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField id="end_data" fx:id="end_data_work" layoutX="379.0" layoutY="356.0" prefHeight="25.0" prefWidth="82.0" promptText="Дата" />
+                <TextField id="end_time" fx:id="end_time_work" layoutX="488.0" layoutY="356.0" prefHeight="25.0" prefWidth="82.0" promptText="Время" />
+                <Label layoutX="69.0" layoutY="385.0" text="Сдача маршрута.">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField id="end_work_data" fx:id="end_data_trip" layoutX="379.0" layoutY="386.0" prefHeight="25.0" prefWidth="82.0" promptText="Дата" />
+                <TextField id="end_work_time" fx:id="end_time_trip" layoutX="488.0" layoutY="386.0" prefHeight="25.0" prefWidth="82.0" promptText="Время" />
+                <Button id="back" fx:id="back" layoutX="110.0" layoutY="465.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #0#C0C0C0000FF;" text="Сменить направление." textFill="#030000">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Button>
+                <Button id="passenger" fx:id="passenger" layoutX="389.0" layoutY="465.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #00#C0C0C000FF;" text="Следование пассажиром." textFill="#070000">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Button>
+                <Button id="end_work" fx:id="end_work" layoutX="279.0" layoutY="532.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #C0C0C00000FF;" text="Завершить поездку." textFill="#030000">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Button>
+            <Label layoutX="62.0" layoutY="209.0" text="Показания счётчиков при приёмке.">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="285.0" text="Показания счетчиков при сдаче.">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
